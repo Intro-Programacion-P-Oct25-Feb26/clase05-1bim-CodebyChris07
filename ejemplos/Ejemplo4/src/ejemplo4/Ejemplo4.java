@@ -25,6 +25,7 @@ public class Ejemplo4 {
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
         //F           or          //F         >>>>> F
+        // equals es igual a 
         if (ciudad.equals("Loja") || ciudad.equals("Machala") || 
                 ciudad.equals("Guayaquil")) {
             System.out.printf("%s\n", "acceso correcto");

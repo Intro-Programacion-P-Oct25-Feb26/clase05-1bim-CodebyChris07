@@ -43,7 +43,7 @@ public class Ejemplo2 {
         
         if (promedio >= 7.5) {
             System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n"
-                    + "Edad: %sCiudad: %s", 
+                    + "Edad: %s\nCiudad: %s", 
                     miNombre, promedio, edad, ciudad);
         }else{
             System.out.printf("Estudiante reprobado con un "
