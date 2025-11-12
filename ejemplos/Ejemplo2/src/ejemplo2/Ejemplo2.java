@@ -32,10 +32,19 @@ public class Ejemplo2 {
         miNombre = entrada.nextLine();
         System.out.println("Ingrese el promedio por favor");
         promedio = entrada.nextDouble();
-
+        entrada.nextLine();
+        
+        String edad;
+        String ciudad;
+        System.out.println("ingrese su edad");
+        edad = entrada.nextLine();
+        System.out.println("Ingrese su ciudad");
+        ciudad = entrada.nextLine();
+        
         if (promedio >= 7.5) {
-            System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n", 
-                    miNombre, promedio);
+            System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n"
+                    + "Edad: %sCiudad: %s", 
+                    miNombre, promedio, edad, ciudad);
         }else{
             System.out.printf("Estudiante reprobado con un "
                     + "promedio: %.2f\n", promedio);
