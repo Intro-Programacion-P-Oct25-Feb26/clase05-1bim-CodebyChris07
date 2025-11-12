@@ -23,8 +23,8 @@ public class Ejemplo5 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese la ciudad");
         String ciudad = entrada.nextLine(); // Quito
-        
-//  ponemos ciudad diferente de loja lo hace acceso incorrecto
+
+    //  ponemos ciudad diferente de loja lo hace acceso incorrecto
         if (!ciudad.equals("Loja")) {
             System.out.printf("%s\n", "acceso correcto");
         } else {
@@ -32,7 +32,7 @@ public class Ejemplo5 {
         }
 
         int numero = 10;
-
+    // si el numero es distinto o igual a 10 pasa a la siguiente linea
         if (numero != 10) {
             System.out.println("correcto");
         }
