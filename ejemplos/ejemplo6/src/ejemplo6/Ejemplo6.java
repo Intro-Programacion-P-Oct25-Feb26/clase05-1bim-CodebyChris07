@@ -4,6 +4,9 @@
  */
 package ejemplo6;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author UTPL
@@ -15,6 +18,46 @@ public class Ejemplo6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        String nombre;
+        String apellido;
+        String usuario;
+        int edad;
+        String parroquia;
+        int diaPago;
+        int mensualidad = 25;
+        double totalDes;
+        double total;
+        System.out.println("Ingrese su nombre por favor");
+        nombre = entrada.nextLine();
+        System.out.println("Ingrese su apellido por favor");
+        apellido = entrada.nextLine();
+        System.out.println("Ingrese su parroquia por favor");
+        parroquia = entrada.nextLine();
+        System.out.println("Ingrese su Usuario por favor");
+        usuario = entrada.nextLine();
+        System.out.println("Ingrese su edad por favor");
+        edad = entrada.nextInt();
+        System.out.println("Ingrese su dia de pago por favor");
+        diaPago = entrada.nextInt();
+
+        if (diaPago < 10 && (parroquia.equals("El Valle")
+                || parroquia.equals("El Sagrario"))) {
+
+            totalDes = (mensualidad * .05);
+            total = (mensualidad - totalDes);
+            System.out.printf("Nombre: %s\nApellido: %s\nUsuario: %s\nEdad: "
+                    + "%s\nParroquia: %s\nDia de pago: %s\nMensualidad: $%s\n"
+                    + "Descuento: $%s\nTotal a Pagar: $%s\n", nombre, apellido, usuario,
+                    edad, parroquia, diaPago, mensualidad, totalDes, total);
+        } else {
+            System.out.printf("Nombre: %s\nApellido: %s\nUsuario: %s\nEdad: "
+                    + "%s\nParroquia: %s\nDia de pago: %s\nMensualidad: $%s\n"
+                    + "Descuento: $0\nTotal a Pagar: $%s\n", nombre, apellido, usuario,
+                    edad, parroquia, diaPago, mensualidad, mensualidad);
+        }
+
     }
-    
+
 }
