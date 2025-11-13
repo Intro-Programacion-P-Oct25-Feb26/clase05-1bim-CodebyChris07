@@ -46,11 +46,12 @@ public class Ejemplo7 {
                                 + "promedio: %.2f\n", promedio);
                     } else {
                         if (promedio < 0) {
-                            System.out.printf("La nota %.2f es negativa"
+                            System.out.printf("La nota %.2f esta fuera de"
+                                    + "rango y es negativa"
                                     , promedio);
                         } else {
                             System.out.printf("La nota %.2f esta fuera de "
-                                    + "rango", promedio);
+                                    + "rango y es positiva", promedio);
 
                         }
                     }
